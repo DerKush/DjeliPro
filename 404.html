@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Djéli Pro | Les experts qui font avancer votre entreprise</title>
+  <meta name="description" content="Djéli Pro réunit les cabinets et indépendants vérifiés de Côte d'Ivoire : informatique, finance, recouvrement, juridique, RH, marketing, ingénierie… Publiez votre besoin, comparez les propositions, payez en sécurité.">
+  <meta name="theme-color" content="#13235B">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <meta property="og:title" content="Djéli Pro, les experts des entreprises ivoiriennes">
+  <meta property="og:description" content="Trouvez et payez en sécurité les meilleurs experts de Côte d'Ivoire.">
+  <meta property="og:image" content="icons/icon-512.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>try { const t = localStorage.getItem('djelipro.theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}</script>
+</head>
+<body>
+  <a class="skip" href="#app">Aller au contenu</a>
+
+  <header class="topbar">
+    <div class="wrap topbar-in">
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Menu">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <a class="logo" href="#/" aria-label="Djéli Pro, accueil">
+        <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="12" cy="20" r="5" fill="currentColor"/><path d="M20 11a12 12 0 0 1 0 18M26 6a19 19 0 0 1 0 28" fill="none" stroke="var(--kola)" stroke-width="3.4" stroke-linecap="round"/></svg>
+        <span>djéli<em>pro</em></span>
+      </a>
+      <nav class="mainnav" aria-label="Navigation principale">
+        <a href="#/experts">Experts</a><a href="#/explorer">Prestations</a><a href="#/projets">Besoins</a><a href="#/domaines">Domaines</a>
+      </nav>
+      <div class="topbar-actions">
+        <a class="icon-btn hide-sm" href="#/explorer" aria-label="Rechercher"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="m20 20-4-4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></a>
+        <a class="icon-btn" href="#/favoris" aria-label="Favoris">♥<span class="badge" data-badge="favs" hidden></span></a>
+        <a class="btn btn-kola sm hide-sm" href="#/publier">Publier un besoin</a>
+        <a class="icon-btn" href="#/mes-besoins" aria-label="Mes besoins" title="Mes besoins">📝<span class="badge" data-badge="needs" hidden></span></a>
+        <a class="acc-btn hide-sm" href="#/compte"><span aria-hidden="true">👤</span> <span data-account-label>Compte</span><span class="badge" data-badge="alerts" hidden></span></a>
+        <button class="icon-btn hide-sm" id="themeBtn" aria-label="Thème clair ou sombre"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9z" fill="currentColor"/></svg></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="drawer" aria-label="Menu">
+    <nav>
+      <a href="#/">Accueil</a><a href="#/experts">Experts</a><a href="#/explorer">Prestations</a><a href="#/projets">Besoins des entreprises</a><a href="#/domaines">Domaines</a>
+      <hr><a href="#/publier">Publier un besoin</a><a href="#/mes-besoins">Mes besoins</a><a href="#/mes-missions">Mes missions</a><a href="#/favoris">Mes favoris</a><a href="#/compte">Mon compte</a>
+      <hr><a href="#/vendre">Devenir expert</a><a href="#/espace">Espace expert</a><a href="#/tarifs">Tarifs</a>
+      <hr><a href="#/aide">Aide</a><a href="#/a-propos">À propos</a><a href="#/contact">Contact</a>
+      <button class="drawer-btn" id="themeBtn2" onclick="document.getElementById('themeBtn').click()">🌓 Changer de thème</button>
+      <button class="drawer-btn" data-install hidden>📲 Installer l'application</button>
+    </nav>
+  </div>
+  <div class="scrim" onclick="document.body.classList.remove('menu-open')"></div>
+
+  <main id="app" tabindex="-1"><div class="wrap pad"><div class="skeleton"></div></div></main>
+
+  <footer class="foot">
+    <div class="wrap foot-grid">
+      <div><a class="logo" href="#/"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="12" cy="20" r="5" fill="currentColor"/><path d="M20 11a12 12 0 0 1 0 18M26 6a19 19 0 0 1 0 28" fill="none" stroke="var(--kola)" stroke-width="3.4" stroke-linecap="round"/></svg><span>djéli<em>pro</em></span></a>
+        <p class="muted">Le griot des professionnels ivoiriens. Fait à Abidjan.</p>
+        <button class="btn btn-line" data-install hidden>Installer l'application</button></div>
+      <div><h2>Entreprises</h2><a href="#/publier">Publier un besoin</a><a href="#/experts">Trouver un expert</a><a href="#/explorer">Prestations</a><a href="#/domaines">Domaines</a></div>
+      <div><h2>Experts</h2><a href="#/vendre">Devenir expert</a><a href="#/projets">Besoins des entreprises</a><a href="#/espace">Espace expert</a><a href="#/tarifs">Tarifs</a></div>
+      <div><h2>Djéli Pro</h2><a href="#/a-propos">À propos</a><a href="#/aide">Aide</a><a href="#/contact">Contact</a><a href="#/cgu">CGU</a><a href="#/confidentialite">Confidentialité</a><a href="#/mentions-legales">Mentions légales</a></div>
+    </div>
+  </footer>
+
+  <nav class="tabbar" aria-label="Navigation mobile">
+    <a href="#/"><span aria-hidden="true">🏠</span>Accueil</a>
+    <a href="#/experts"><span aria-hidden="true">🔍</span>Experts</a>
+    <a href="#/publier" class="tab-sell"><span aria-hidden="true">＋</span>Publier</a>
+    <a href="#/projets"><span aria-hidden="true">📋</span>Besoins<i class="badge" data-badge="needs" hidden></i></a>
+    <a href="#/compte"><span aria-hidden="true">👤</span>Compte<i class="badge" data-badge="alerts" hidden></i></a>
+  </nav>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script>
+  /* Diagnostic de démarrage : explique pourquoi la page ne s'affiche pas, au lieu de rester vide. */
+  (function () {
+    var FILES = ['js/app.js','js/config.js','js/data.js','js/search.js','js/store.js','js/ui.js','js/searchbox.js',
+      'js/pages/home.js','js/pages/explore.js','js/pages/catalog.js','js/pages/seller.js','js/pages/account.js','js/pages/info.js','css/style.css'];
+    function box(html) {
+      var el = document.getElementById('app');
+      el.innerHTML = '<div class="wrap pad"><div class="boot-err">' + html + '</div></div>';
+    }
+    window.__djeliFail = function (reason) {
+      if (window.__djeliBooted || window.__djeliShown) return; window.__djeliShown = true;
+      if (location.protocol === 'file:') {
+        box('<h1>Ouvrez le site par son adresse web</h1><p>Vous avez ouvert <b>index.html</b> directement depuis votre ordinateur. Par sécurité, les navigateurs bloquent alors l\'application.</p>' +
+          '<p>Mettez le site en ligne sur GitHub Pages (voir README) et ouvrez l\'adresse <b>https://votre-nom.github.io/djeli/</b>.</p>' +
+          '<p>Pour tester sur votre ordinateur : ouvrez un terminal dans le dossier et tapez <code>python -m http.server</code>, puis allez sur <b>http://localhost:8000</b>.</p>');
+        return;
+      }
+      Promise.all(FILES.map(function (f) { return fetch(f, { cache: 'no-store' }).then(function (r) { return r.ok ? null : f; }, function () { return f; }); }))
+        .then(function (res) {
+          var missing = res.filter(Boolean);
+          if (missing.length) {
+            box('<h1>Des fichiers du site sont introuvables</h1><p>Ces fichiers manquent ou ne sont pas dans le bon dossier :</p><ul><li>' + missing.join('</li><li>') + '</li></ul>' +
+              '<p>Sur GitHub, vérifiez que les dossiers <b>css</b>, <b>js</b>, <b>js/pages</b> et <b>icons</b> existent bien, avec les fichiers dedans. Le plus simple : supprimez le dépôt, recréez-le, et glissez les <b>dossiers</b> (pas seulement les fichiers) dans la page d\'envoi de GitHub.</p>');
+          } else {
+            box('<h1>Le site n\'a pas pu démarrer</h1><p>Une ancienne version est peut-être restée en mémoire sur cet appareil.</p>' +
+              '<p><button class="btn btn-green" onclick="__djeliRepair()">Réparer et recharger</button></p><p class="small muted">Détail : ' + (reason || 'délai dépassé') + '</p>');
+          }
+        });
+    };
+    window.__djeliRepair = function () {
+      var p = [];
+      if ('serviceWorker' in navigator) p.push(navigator.serviceWorker.getRegistrations().then(function (rs) { return Promise.all(rs.map(function (r) { return r.unregister(); })); }));
+      if (window.caches) p.push(caches.keys().then(function (ks) { return Promise.all(ks.map(function (k) { return caches.delete(k); })); }));
+      Promise.all(p).then(function () { location.reload(); });
+    };
+    window.addEventListener('error', function (e) { if (!window.__djeliBooted && e && e.message) window.__djeliLastError = e.message; });
+    if (location.protocol === 'file:') document.addEventListener('DOMContentLoaded', function () { window.__djeliFail(); });
+    setTimeout(function () { if (!window.__djeliBooted) window.__djeliFail(window.__djeliLastError); }, 9000);
+  })();
+  </script>
+  <script type="module" src="js/app.js" onerror="__djeliFail('js/app.js ou un de ses modules n\'a pas pu être chargé')"></script>
+</body>
+</html>

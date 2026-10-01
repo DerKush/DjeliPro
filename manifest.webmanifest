@@ -1,0 +1,47 @@
+{
+  "name": "Djéli Pro, les experts des entreprises",
+  "short_name": "Djéli Pro",
+  "description": "Trouvez et payez en sécurité les experts de Côte d'Ivoire.",
+  "lang": "fr-CI",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F3F4F8",
+  "theme_color": "#13235B",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Explorer",
+      "url": "./#/explorer"
+    },
+    {
+      "name": "Publier un besoin",
+      "url": "./#/publier"
+    },
+    {
+      "name": "Besoins",
+      "url": "./#/projets"
+    }
+  ],
+  "categories": [
+    "shopping",
+    "business"
+  ]
+}
